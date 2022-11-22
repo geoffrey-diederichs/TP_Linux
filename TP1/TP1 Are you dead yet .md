@@ -5,7 +5,7 @@ Geoffrey DIEDERICHS B1b
 Hasher le disque dur :
 ```bash=
 $ sudo chmod ugo+wx /dev/sda1
-$ sudo sha1sum sda1 > sda1
+$ sudo sha1sum sda > sda
 ```
 
 Supprimer bash :
