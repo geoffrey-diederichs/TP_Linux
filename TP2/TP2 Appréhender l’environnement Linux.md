@@ -204,7 +204,7 @@ $ cat /var/www/tp2_linux/index.html
 
 🌞 **Adapter la conf NGINX**
 ```bash=
-$  cat /etc/nginx/nginx.conf | grep -v "#" | grep "server {"
+$ cat /etc/nginx/nginx.conf | grep -v "#" | grep "server {"
 
 $ sudo firewall-cmd --add-port=21208/tcp
 
