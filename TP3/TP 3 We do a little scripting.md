@@ -61,6 +61,7 @@ cat.jpeg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 72x72, 
 ```
 # II. Script youtube-dl
 [yt.sh](./scripts/youtube-dl/yt.sh)
+
 [download.log](./scripts/youtube-dl/download.log)
 ```bash=
 [rocky@linuxTP3 yt]$ pwd
@@ -110,8 +111,10 @@ drwxr-xr-x. 3 rocky rocky    28 Dec  5 12:26  ..
 ```
 # III. MAKE IT A SERVICE
 [yt-v2.sh](./scripts/service/yt-v2.sh)
+
 [dl_yt.sh](./scripts/service/dl_yt.sh)
-[youtube.service](./scripts/service/youtube.service)
+
+[yt.service](./scripts/service/yt.service)
 ```bash=
 [rocky@linuxTP3 yt]$ sudo systemctl status yt
 ○ yt.service - "Downloads youtube videos from the url in /srv/service/urls.txt"
