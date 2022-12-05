@@ -1,0 +1,9 @@
+[Unit]
+Description="Downloads youtube videos from the url in /srv/service/urls.txt"
+
+[Service]
+ExecStart=/srv/service/yt-v2.sh
+User=rocky
+
+[Install]
+WantedBy=multi-user.target
