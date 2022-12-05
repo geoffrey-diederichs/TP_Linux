@@ -21,6 +21,7 @@ Connecté actuellement avec l'utilisateur rocky.
 Connecté actuellement avec l'utilisateur rocky.
 ```
 # I. Script carte d'identité
+[idcard.sh](./scripts/idcard/idcard.sh)
 ```bash=
 [rocky@linuxTP3 idcard]$ pwd
 /srv/idcard
@@ -58,8 +59,9 @@ drwxr-xr-x. 6 root  root    71 Nov 29 15:54 ..
 [rocky@linuxTP3 idcard]$ file cat.jpeg 
 cat.jpeg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 72x72, segment length 16, baseline, precision 8, 600x601, components 3
 ```
-[idcard.sh](./scripts/idcard/idcard.sh)
 # II. Script youtube-dl
+[yt.sh](./scripts/youtube-dl/yt.sh)
+[download.log](./scripts/youtube-dl/download.log)
 ```bash=
 [rocky@linuxTP3 yt]$ pwd
 /srv/yt
