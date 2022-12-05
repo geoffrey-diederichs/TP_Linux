@@ -111,6 +111,7 @@ drwxr-xr-x. 3 rocky rocky    28 Dec  5 12:26  ..
 # III. MAKE IT A SERVICE
 [yt-v2.sh](./scripts/service/yt-v2.sh)
 [dl_yt.sh](./scripts/service/dl_yt.sh)
+[youtube.service](./scripts/service/youtube.service)
 ```bash=
 [rocky@linuxTP3 yt]$ sudo systemctl status yt
 ○ yt.service - "Downloads youtube videos from the url in /srv/service/urls.txt"
