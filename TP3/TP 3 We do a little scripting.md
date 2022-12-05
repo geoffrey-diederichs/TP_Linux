@@ -1,3 +1,5 @@
+Geoffrey Diederichs Ynov B1b
+
 # TP 3 : We do a little scripting
 # 0. Un premier script
 ```bash=
@@ -56,6 +58,7 @@ drwxr-xr-x. 6 root  root    71 Nov 29 15:54 ..
 [rocky@linuxTP3 idcard]$ file cat.jpeg 
 cat.jpeg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 72x72, segment length 16, baseline, precision 8, 600x601, components 3
 ```
+[idcard.sh](./scripts/idcard/idcard.sh)
 # II. Script youtube-dl
 ```bash=
 [rocky@linuxTP3 yt]$ pwd
