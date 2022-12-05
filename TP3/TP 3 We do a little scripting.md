@@ -109,6 +109,8 @@ drwxr-xr-x. 3 rocky rocky    28 Dec  5 12:26  ..
 [2022/12/05 12:45:17] Video https://www.youtube.com/watch?v=TK4N5W22Gts was downloaded. File Path : /srv/yt/downloads/2 Second Video/2 Second Video.mp4
 ```
 # III. MAKE IT A SERVICE
+[yt-v2.sh](./scripts/service/yt-v2.sh)
+[dl_yt.sh](./scripts/service/dl_yt.sh)
 ```bash=
 [rocky@linuxTP3 yt]$ sudo systemctl status yt
 ○ yt.service - "Downloads youtube videos from the url in /srv/service/urls.txt"
