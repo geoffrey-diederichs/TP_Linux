@@ -285,7 +285,8 @@ LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=28
 [rocky@web ~]$ ls -al /usr/share/nginx/html/index.html 
 lrwxrwxrwx. 1 root root 25 Oct 31 16:37 /usr/share/nginx/html/index.html -> ../../testpage/index.html
 ```
-Le service tourne sous : nginx.
+Utilisateur : nginx.
+Authorisations sur le fichier : read, write, execute.
 ## 4. Visite du service web
 🌞 **Configurez le firewall pour autoriser le trafic vers le service NGINX**
 ```bash=
