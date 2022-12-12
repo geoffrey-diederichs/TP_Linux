@@ -52,14 +52,10 @@ Writing superblocks and filesystem accounting information: done
 [rocky@storage ~]$ sudo df -h | grep storage
 /dev/mapper/storage-storage_lv  2.0G  5.1M  1.9G   1% /storage
 
-[rocky@storage ~]$ sudo rm /storage/test
-
 [rocky@storage ~]$ sudo nano /storage/test
 
 [rocky@storage ~]$ sudo cat /storage/test
 test
-
-[rocky@storage ~]$ sudo rm /storage/test
 ```
 ```bash=
 [rocky@storage ~]$ sudo cat /etc/fstab | grep storage
@@ -131,7 +127,9 @@ drwxr-xr-x.  2 nobody root  4096 Dec 11 16:04 site_web_2
 
 [rocky@storage ~]$ sudo systemctl enable nfs-server
 Created symlink /etc/systemd/system/multi-user.target.wants/nfs-server.service → /usr/lib/systemd/system/nfs-server.service.
+
 [rocky@storage ~]$ sudo systemctl start nfs-server
+
 [rocky@storage ~]$ sudo systemctl status  nfs-server
 ● nfs-server.service - NFS server and services
      Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; enabled; vendor preset: disabled)
@@ -284,9 +282,10 @@ rocky       2564     835  0 16:38 pts/0    00:00:00 grep --color=auto nginx
 LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=2828,fd=6),("nginx",pid=2827,fd=6))
 LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=2828,fd=7),("nginx",pid=2827,fd=7))
 
-[rocky@web ~]$ sudo ls -la /etc/nginx/nginx.conf
--rw-r--r--. 1 root root 2334 Oct 31 16:37 /etc/nginx/nginx.conf
+[rocky@web ~]$ ls -al /usr/share/nginx/html/index.html 
+lrwxrwxrwx. 1 root root 25 Oct 31 16:37 /usr/share/nginx/html/index.html -> ../../testpage/index.html
 ```
+Le service tourne sous : nginx.
 ## 4. Visite du service web
 🌞 **Configurez le firewall pour autoriser le trafic vers le service NGINX**
 ```bash=
